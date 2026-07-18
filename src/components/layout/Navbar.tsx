@@ -5,8 +5,7 @@ import MobileMenu from "./MobileMenu";
 import { useActiveSection } from "../../hooks/useActiveSection";
 import { scrollToSection } from "../../utils/scrollToSection";
 
-const logo = "/src/assets/images/logo.png";
-
+import logo from "../../assets/images/logo.png";
 const navLinks = [
   "Home",
   "About",
