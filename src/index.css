@@ -1,0 +1,243 @@
+@import "tailwindcss";
+
+@import "@fontsource/inter";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+
+/*
+  Tailwind v4 maps `dark:` to the OS `prefers-color-scheme` media query by
+  default. This app toggles themes manually via next-themes (a `.dark`
+  class on <html>), so without this custom variant every `dark:` utility
+  in the codebase silently ignores the toggle and only follows the OS
+  setting - that was the source of the inconsistent theme switching.
+*/
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root{
+  --primary:#38BDF8;
+  --primary-hover:#1D4ED8;
+  --primary-soft:#93C5FD;
+  --primary-contrast:#0B1120;
+
+
+  --background:#ffffff;
+  --surface:#f8fafc;
+  --card:#ffffff;
+
+  --text:#0f172a;
+  --text-light:#475569;
+  --text-muted:#94a3b8;
+
+  --border:#e2e8f0;
+
+  --shadow:0 12px 32px rgba(15,23,42,.06);
+
+  color-scheme:light;
+}
+
+.dark{
+  --primary:#38BDF8;
+  --primary-hover:#1D4ED8;
+  --primary-soft:rgba(56,189,248,.12);
+  --primary-contrast:#0B1120;
+
+
+  --background:#0a0f1c;
+  --surface:#0f1729;
+  --card:#131c2e;
+
+  --text:#f1f5f9;
+  --text-light:#b6c2d4;
+  --text-muted:#7c8aa3;
+
+  --border:#22304a;
+
+  --shadow:0 12px 32px rgba(0,0,0,.4);
+
+  color-scheme:dark;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+/* Header is fixed; keep anchored sections clear of it */
+section{
+  scroll-margin-top:96px;
+}
+
+body{
+  background:var(--background);
+  color:var(--text);
+  font-family:"Inter",sans-serif;
+  transition:background-color .3s ease,color .3s ease;
+  overflow-x:hidden;
+}
+
+#root{
+  background:var(--background);
+  color:var(--text);
+  min-height:100vh;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:"Poppins",sans-serif;
+}
+
+.container-custom{
+  width:min(1280px,92%);
+  margin:auto;
+}
+
+/* ---- Shared section typography ---- */
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  font-size:.75rem;
+  font-weight:600;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--primary);
+}
+
+.section-heading{
+  margin-top:.9rem;
+  font-size:clamp(1.75rem,3vw,2.5rem);
+  font-weight:700;
+  letter-spacing:-.02em;
+  line-height:1.2;
+  color:var(--text);
+}
+
+.section-sub{
+  margin-top:1.1rem;
+  font-size:1.0625rem;
+  line-height:1.75;
+  color:var(--text-light);
+}
+
+/* ---- Primitives ---- */
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:20px;
+  box-shadow:var(--shadow);
+}
+
+.icon-tile{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:56px;
+  height:56px;
+  border-radius:14px;
+  background:var(--primary-soft);
+  color:var(--primary);
+}
+
+.input-field{
+  width:100%;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--text);
+  padding:14px 18px;
+  font-size:.95rem;
+  outline:none;
+  transition:border-color .2s ease,box-shadow .2s ease;
+}
+
+.input-field::placeholder{
+  color:var(--text-muted);
+}
+
+.input-field:focus{
+  border-color:var(--primary);
+  box-shadow:0 0 0 3px var(--primary-soft);
+}
+
+.btn-primary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  padding:14px 30px;
+
+  border-radius:12px;
+
+  background:linear-gradient(135deg,var(--primary),var(--primary-hover));
+
+  color:var(--primary-contrast);
+
+  font-weight:600;
+  font-size:.95rem;
+
+  border:none;
+
+  cursor:pointer;
+
+  transition:box-shadow .25s ease,transform .25s ease;
+}
+
+.btn-primary:hover{
+  box-shadow:0 10px 24px rgba(29,78,216,.28);
+  transform:translateY(-2px);
+}
+
+
+.btn-outline{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:10px;
+
+  padding:14px 30px;
+
+  border-radius:12px;
+
+  border:1.5px solid var(--border);
+
+  color:var(--text);
+
+  background:transparent;
+
+  font-weight:600;
+  font-size:.95rem;
+
+  cursor:pointer;
+
+  transition:border-color .25s ease,background-color .25s ease;
+}
+
+.btn-outline:hover{
+  border-color:var(--primary);
+  background:var(--primary-soft);
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:var(--primary);
+  border-radius:20px;
+}
+
