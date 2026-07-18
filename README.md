@@ -1,6 +1,9 @@
-# React + TypeScript + Vite
+# Spark Solar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Vite + React project.
+
+**Logo for GitHub/Vercel previews**: the social preview uses `/public/logo.png` (served at `/logo.png`).
+
 
 Currently, two official plugins are available:
 
