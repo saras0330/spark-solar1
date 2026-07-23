@@ -19,4 +19,13 @@ export default function ThemeToggle() {
     </button>
   );
 }
+export const navLinks = [
+  "Home",
+  "About",
+  "Services",
+  "Calculator",
+  "Projects",
+  "FAQ",
+  "Contact",
+];
 
