@@ -111,7 +111,7 @@ export default function Contact() {
                   </h3>
 
                   <p className="text-sm text-[var(--text-light)] mt-2">
-                    info@sparksolar.in
+                    sparksolar68@gmail.com
                   </p>
 
                 </div>
@@ -131,7 +131,9 @@ export default function Contact() {
                   </h3>
 
                   <p className="text-sm text-[var(--text-light)] mt-2">
-                    Vadodara, Gujarat, India
+                    GF-10 Vinayka complex,
+                    Near VIBGYOR School,Bhayli station,
+                    Bhayli Vadodara, Gujarat, India-391410
                   </p>
 
                 </div>

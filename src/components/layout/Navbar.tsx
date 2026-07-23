@@ -5,7 +5,13 @@ import MobileMenu from "./MobileMenu";
 import { useActiveSection } from "../../hooks/useActiveSection";
 import { scrollToSection } from "../../utils/scrollToSection";
 
+// 1. Import the image at the top of your file
 import logo from "../../assets/images/logo.png";
+
+function Header() {
+  // 2. Use the imported variable instead of a string path
+  return <img src={logo} alt="Company Logo" />;
+}
 const navLinks = [
   "Home",
   "About",
@@ -62,7 +68,7 @@ export default function Navbar() {
               </h2>
 
               <p className="text-xs tracking-[3px] uppercase text-slate-500">
-                Clean Energy
+                 Power A renewable Energy solutions 
               </p>
             </div>
           </a>

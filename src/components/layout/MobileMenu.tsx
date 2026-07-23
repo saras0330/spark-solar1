@@ -47,7 +47,7 @@ export default function MobileMenu({
             </h2>
 
             <p className="text-[11px] tracking-[2.5px] uppercase text-[var(--text-muted)]">
-              Clean Energy
+               Power A renewable Energy solutions
             </p>
 
           </div>

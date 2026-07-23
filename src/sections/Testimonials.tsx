@@ -2,25 +2,46 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Rajesh Patel",
+    name: "Uday Sharma",
     role: "Home Owner",
-    city: "Ahmedabad",
+    city: "Vadodra",
     review:
-      "Spark Solar handled everything professionally. Installation was completed on time and my electricity bill has reduced significantly.",
+      "Customer support has been helpful whenever I had questions, though response time could be a bit faster",
   },
   {
-    name: "Nilesh Shah",
-    role: "Business Owner",
+    name: "Neetu Thakur",
+    role: "House Owner",
     city: "Vadodara",
     review:
-      "Excellent service, premium products and great customer support. Highly recommended for commercial solar projects.",
+      "Professional team and honest guidance. They explained subsidy and load calculation clearly before installation.",
   },
   {
-    name: "Mehul Desai",
-    role: "Factory Owner",
-    city: "Surat",
+    name: "Shashikant Gautam",
+    role: "House Owner",
+    city: "Vadodra",
     review:
-      "Very professional team. They managed subsidy documentation and installation without any hassle.",
+      "Spark Solar Power offers reliable and efficient solar energy solutions",
+  },
+    {
+    name: "Rohit Sharma",
+    role: "House Owner",
+    city: "Vadodra",
+    review:
+      "Spark Solar Power provided quality material and smooth installation. Satisfied with their service and support.Great experience 👍.",
+  },
+      {
+    name: "Priya Yadav",
+    role: "House Owner",
+    city: "Vadodra",
+    review:
+      "Great service with Knowledgeable Team Quality work",
+  },
+      {
+    name: "Bright Side",
+    role: "House Owner",
+    city: "Vadodra",
+    review:
+      "Great work with better services.",
   },
 ];
 

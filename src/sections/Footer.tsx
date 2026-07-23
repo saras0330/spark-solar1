@@ -38,7 +38,7 @@ export default function Footer() {
                 </h2>
 
                 <p className="text-xs text-slate-400">
-                  Premium Solar Energy
+                   Power A renewable Energy solutions
                 </p>
 
               </div>
@@ -130,12 +130,14 @@ export default function Footer() {
 
               <div className="flex gap-3">
                 <Mail className="text-amber-400 shrink-0" size={18} />
-                <span>info@sparksolar.in</span>
+                <span>sparksolar68@gmail.com</span>
               </div>
 
               <div className="flex gap-3">
                 <MapPin className="text-amber-400 shrink-0" size={18} />
-                <span>Vadodara, Gujarat</span>
+                <span>GF-10 Vinayka complex,
+                     Near VIBGYOR School,Bhayli station,
+                     Bhayli Vadodara, Gujarat, India-391410</span>
               </div>
 
             </div>

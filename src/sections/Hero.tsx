@@ -1,5 +1,6 @@
 import { ArrowRight, CheckCircle2, Play, Users, IndianRupee } from "lucide-react";
 import { motion } from "framer-motion";
+import TrustedClients from "../components/home/TrustedClients";
 
 const highlights = [
   "25 Years Performance Warranty",
@@ -105,6 +106,8 @@ export default function Hero() {
               ))}
 
             </div>
+
+            <TrustedClients />
 
           </motion.div>
 

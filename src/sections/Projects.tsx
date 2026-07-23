@@ -1,41 +1,53 @@
 import { ArrowUpRight } from "lucide-react";
+import tirumalaiImage from "../assets/images/173f131c-08c0-4f1f-9d63-3d3b73d9056a.jpeg";
+import ongcImage from "../assets/images/026ae34c-59da-470d-89dd-a342100e7f86.jpg";
+import anviPetrochemImage from "../assets/images/f306fc5f-d3c6-48d1-a7cd-d19edbd127a1.jpg";
+import vishalEngineersImage from "../assets/images/f63e9059-36d2-4807-befb-8854c5f7e06b.jpg";
+import iolcImage from "../assets/images/47e0ef06-169e-4c4b-9ac8-48d4996c6a05.jpg";
+import avinashVanaspatiImage from "../assets/images/afc3dcc0-30ed-4e0c-8d09-240cc2bae65c.jpg";
+import gulbrandsonImage from "../assets/images/973e9ab6-2ba2-4db5-92fc-a36aec0d2e57.jpg";
+import jalaramBricksImage from "../assets/images/d21f5f4d-a36a-4436-b766-8b4861be2b4f.jpg";
 
 const projects = [
   {
-    image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop",
-    title: "Residential Rooftop",
-    location: "Ahmedabad, Gujarat",
+    image: tirumalaiImage,
+    title: "Tirumalai Chemicle",
+    location: "Mumbai",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1497440001374-f26997328c1b?q=80&w=1200&auto=format&fit=crop",
-    title: "Commercial Building",
-    location: "Vadodara, Gujarat",
+    image: ongcImage,
+    title: "ONGC",
+    location: "Dahej",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1200&auto=format&fit=crop",
-    title: "Industrial Solar Plant",
-    location: "Jaipur, Rajasthan",
+    image: anviPetrochemImage,
+    title: "Avni Petrochem",
+    location: "Ahmedabad",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop",
-    title: "Farm Solar System",
-    location: "Rajkot, Gujarat",
+    image: vishalEngineersImage,
+    title: "Vishal Engineers",
+    location: "Pune",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200&auto=format&fit=crop",
-    title: "School Campus",
-    location: "Surat, Gujarat",
+    image: iolcImage,
+    title: "IOCL",
+    location: "Vadodara",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?q=80&w=1200&auto=format&fit=crop",
-    title: "Hospital Installation",
-    location: "Udaipur, Rajasthan",
+    image: avinashVanaspatiImage,
+    title: "Ashwin Vanashpati",
+    location: "",
+  },
+  {
+    image: gulbrandsonImage,
+    title: "Gulbrandson",
+    location: "Dahej",
+  },
+  {
+    image: jalaramBricksImage,
+    title: "Jalaram Bricks",
+    location: "Godhra",
   },
 ];
 
@@ -54,8 +66,8 @@ export default function Projects() {
           </h2>
 
           <p className="section-sub">
-            A glimpse of our completed residential, commercial and industrial
-            solar projects.
+            A glimpse of our completed industrial and commercial
+            solar installations.
           </p>
         </div>
 
